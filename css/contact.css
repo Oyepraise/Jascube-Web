@@ -1,0 +1,325 @@
+/* =========================================================
+   JASCUBE TECHNOLOGY
+   CONTACT PAGE STYLES
+========================================================= */
+
+
+/* =========================
+   CONTACT HERO
+========================= */
+
+.contact-hero {
+    min-height: calc(100vh - 76px);
+
+    padding: 85px 7%;
+
+    background: linear-gradient(
+        120deg,
+        #f7f9ff,
+        #ffffff,
+        #f6fbff
+    );
+}
+
+
+/* =========================
+   CONTACT HEADING
+========================= */
+
+.contact-heading {
+    max-width: 700px;
+    margin-bottom: 50px;
+}
+
+.contact-heading > span {
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+}
+
+.contact-heading h1 {
+    margin-top: 8px;
+
+    color: #172033;
+
+    font-size: clamp(42px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+.contact-heading p {
+    max-width: 600px;
+
+    margin-top: 15px;
+
+    color: #718096;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   CONTACT CONTAINER
+========================= */
+
+.contact-container {
+    max-width: 1100px;
+
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 25px;
+}
+
+
+/* =========================
+   CONTACT INFORMATION
+========================= */
+
+.contact-info {
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(31, 51, 83, 0.05);
+}
+
+.contact-info h2 {
+    margin-bottom: 8px;
+
+    color: #172033;
+
+    font-size: 25px;
+}
+
+.contact-info > p {
+    margin-bottom: 35px;
+
+    color: #748095;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT ITEMS
+========================= */
+
+.contact-item {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 27px;
+}
+
+.contact-icon {
+    width: 43px;
+    height: 43px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #eef2ff;
+
+    color: #315ee8;
+
+    border-radius: 9px;
+
+    font-size: 17px;
+}
+
+.contact-item span {
+    display: block;
+
+    margin-bottom: 3px;
+
+    color: #8a95a7;
+
+    font-size: 12px;
+}
+
+.contact-item p {
+    color: #303b4d;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+.contact-form {
+    padding: 35px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e8f0;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(31, 51, 83, 0.05);
+}
+
+.contact-form h2 {
+    margin-bottom: 25px;
+
+    color: #172033;
+
+    font-size: 25px;
+}
+
+
+/* =========================
+   FORM GROUP
+========================= */
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #354052;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #dce2eb;
+
+    border-radius: 7px;
+
+    background: #fbfcfe;
+
+    color: #202b3d;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+.form-group input {
+    height: 45px;
+}
+
+.form-group textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #a5adba;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #7d91e8;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 0 0 3px rgba(49, 94, 232, 0.08);
+}
+
+
+/* =========================
+   SEND BUTTON
+========================= */
+
+.contact-form .primary-btn {
+    cursor: pointer;
+
+    margin-top: 5px;
+}
+
+
+/* =========================
+   CONTACT RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 760px) {
+
+    .contact-hero {
+        min-height: auto;
+
+        padding: 65px 5%;
+    }
+
+    .contact-heading {
+        margin-bottom: 35px;
+    }
+
+    .contact-heading h1 {
+        font-size: 43px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 27px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .contact-heading h1 {
+        font-size: 38px;
+    }
+
+    .contact-info,
+    .contact-form {
+        padding: 22px;
+    }
+
+}

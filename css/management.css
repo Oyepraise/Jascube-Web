@@ -1,0 +1,511 @@
+/* =========================================================
+   JASCUBE TECHNOLOGY
+   MANAGEMENT PAGE STYLES
+========================================================= */
+
+
+/* =========================================================
+   MANAGEMENT PAGE
+========================================================= */
+
+.management-page {
+    min-height: calc(100vh - 76px);
+
+    padding: 85px 7%;
+
+    background: linear-gradient(
+        120deg,
+        #f7f9ff,
+        #ffffff,
+        #f6fbff
+    );
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   MANAGEMENT HEADING
+========================================================= */
+
+.management-heading {
+    max-width: 700px;
+
+    margin-bottom: 55px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+.management-heading > span {
+    color: #315ee8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+.management-heading h1 {
+    margin-top: 8px;
+
+    color: #172033;
+
+    font-size: clamp(42px, 5vw, 60px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+.management-heading p {
+    max-width: 620px;
+
+    margin-top: 15px;
+
+    color: #718096;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ADMIN STAFF
+========================================================= */
+
+.staff-section {
+    position: relative;
+
+    z-index: 2;
+}
+
+.staff-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.staff-card {
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e6ef;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(31, 51, 83, 0.05);
+
+    transition: 0.25s ease;
+}
+
+.staff-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(31, 51, 83, 0.09);
+}
+
+
+/* STAFF PHOTO */
+
+.staff-photo {
+    width: 100%;
+
+    height: 250px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background: #eef2ff;
+
+    border: 1px solid #e0e6f0;
+
+    border-radius: 12px;
+
+    color: #315ee8;
+
+    font-size: 13px;
+
+    font-weight: 600;
+}
+
+
+/* STAFF DETAILS */
+
+.staff-details h2 {
+    margin-bottom: 5px;
+
+    color: #172033;
+
+    font-size: 20px;
+}
+
+.staff-details > span {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.staff-details p {
+    color: #718096;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DIRECTORS
+========================================================= */
+
+.directors-section {
+    width: 100%;
+
+    margin-top: 20px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   DIRECTOR LAYOUT
+========================= */
+
+.directors-grid {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 65px;
+}
+
+
+/* =========================
+   DIRECTOR CARD
+========================= */
+
+.director-card {
+    width: 760px;
+
+    min-height: 350px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    padding: 38px;
+
+    background: #ffffff;
+
+    border: 1px solid #e0e6ef;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(31, 51, 83, 0.07);
+
+    transition: 0.25s ease;
+}
+
+.director-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 18px 40px rgba(31, 51, 83, 0.11);
+}
+
+
+/* =========================
+   STAGGERED POSITION
+========================= */
+
+.director-one {
+    align-self: flex-start;
+}
+
+.director-two {
+    align-self: flex-end;
+}
+
+
+/* =========================
+   DIRECTOR PHOTO
+========================= */
+
+.director-photo {
+    width: 260px;
+
+    height: 295px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #eef2ff,
+        #f7faff
+    );
+
+    border: 1px solid #dfe5ef;
+
+    border-radius: 14px;
+
+    color: #315ee8;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* SUBTLE DECORATION */
+
+.director-photo::before {
+    content: "";
+
+    position: absolute;
+
+    width: 150px;
+
+    height: 150px;
+
+    border: 1px solid rgba(79, 70, 229, 0.12);
+
+    transform: rotate(45deg);
+
+    border-radius: 18px;
+}
+
+.director-photo::after {
+    content: "";
+
+    position: absolute;
+
+    width: 80px;
+
+    height: 80px;
+
+    background: rgba(37, 99, 235, 0.07);
+
+    transform: rotate(45deg);
+
+    border-radius: 12px;
+}
+
+
+/* =========================
+   DIRECTOR DETAILS
+========================= */
+
+.director-details {
+    flex: 1;
+}
+
+.director-details h2 {
+    margin-bottom: 7px;
+
+    color: #172033;
+
+    font-size: 29px;
+
+    line-height: 1.2;
+}
+
+.director-details > span {
+    display: block;
+
+    margin-bottom: 18px;
+
+    color: #315ee8;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+.director-details p {
+    color: #718096;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SUBTLE PAGE DECORATION
+========================================================= */
+
+.management-page::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+
+    height: 300px;
+
+    right: -130px;
+
+    top: 120px;
+
+    border: 1px solid rgba(79, 70, 229, 0.08);
+
+    transform: rotate(45deg);
+
+    pointer-events: none;
+}
+
+.management-page::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+
+    height: 220px;
+
+    left: -110px;
+
+    bottom: 100px;
+
+    border: 1px solid rgba(37, 99, 235, 0.07);
+
+    transform: rotate(45deg);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+    .staff-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .director-card {
+        width: 80%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .director-card {
+        width: 92%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .management-page {
+        min-height: auto;
+
+        padding: 65px 5%;
+    }
+
+    .management-heading {
+        margin-bottom: 40px;
+    }
+
+    .staff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .director-one,
+    .director-two {
+        align-self: center;
+    }
+
+    .director-card {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 550px) {
+
+    .management-heading h1 {
+        font-size: 40px;
+    }
+
+    .director-card {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 25px;
+    }
+
+    .director-photo {
+        width: 100%;
+
+        height: 300px;
+    }
+
+} 

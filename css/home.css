@@ -1,0 +1,1058 @@
+/* =========================================================
+   JASCUBE TECHNOLOGY
+   HOME PAGE STYLES
+========================================================= */
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    min-height: calc(100vh - 76px);
+
+    padding: 80px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 70px;
+
+    background: linear-gradient(
+        120deg,
+        #f7f9ff,
+        #ffffff,
+        #f5f9ff
+    );
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =========================
+   HERO CONTENT
+========================= */
+
+.hero-content {
+    max-width: 650px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.hero-tag {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+.hero-content h1 {
+    margin: 0;
+
+    color: #172033;
+
+    font-size: clamp(46px, 6vw, 72px);
+
+    line-height: 1.08;
+
+    letter-spacing: -2px;
+}
+
+.hero-content h1 span {
+    color: #315ee8;
+}
+
+.hero-content p {
+    max-width: 610px;
+
+    margin-top: 20px;
+
+    color: #718096;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   HERO BUTTONS
+========================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+    width: 410px;
+    height: 410px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        145deg,
+        #eef2ff,
+        #f8fbff
+    );
+
+    border: 1px solid #e0e6f0;
+
+    border-radius: 24px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 45px rgba(49, 94, 232, 0.08);
+}
+
+
+/* =========================
+   VISUAL CARD
+========================= */
+
+.visual-card {
+    width: 275px;
+    height: 315px;
+
+    padding: 22px;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border: 1px solid #dfe5ef;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 15px 35px rgba(31, 51, 83, 0.10);
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================
+   VISUAL TOP
+========================= */
+
+.visual-top {
+    display: flex;
+
+    gap: 6px;
+
+    margin-bottom: 30px;
+}
+
+.visual-top span {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #cbd3df;
+}
+
+.visual-top span:first-child {
+    background: #4f46e5;
+}
+
+.visual-top span:nth-child(2) {
+    background: #7c8eea;
+}
+
+.visual-top span:nth-child(3) {
+    background: #2563eb;
+}
+
+
+/* =========================
+   CODE LINES
+========================= */
+
+.code-lines {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+}
+
+.code-line {
+    height: 8px;
+
+    border-radius: 5px;
+
+    background: #dfe5f0;
+}
+
+.code-line.long {
+    width: 85%;
+}
+
+.code-line.medium {
+    width: 65%;
+}
+
+.code-line.short {
+    width: 42%;
+}
+
+.code-gap {
+    height: 13px;
+}
+
+
+/* =========================
+   VISUAL LABEL
+========================= */
+
+.visual-label {
+    position: absolute;
+
+    left: 22px;
+
+    bottom: 22px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.visual-label span {
+    color: #315ee8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.visual-label strong {
+    margin-top: 3px;
+
+    color: #172033;
+
+    font-size: 20px;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY SECTION
+========================================================= */
+
+.technology {
+    padding: 95px 7%;
+
+    background: #ffffff;
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-heading {
+    max-width: 700px;
+
+    margin-bottom: 48px;
+}
+
+.section-heading > span {
+    color: #315ee8;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+.section-heading h2 {
+    margin-top: 8px;
+
+    color: #172033;
+
+    font-size: clamp(34px, 4vw, 50px);
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+.section-heading p {
+    margin-top: 14px;
+
+    color: #718096;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TECHNOLOGY GRID
+========================================================= */
+
+.technology-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   TECHNOLOGY CARD
+========================================================= */
+
+.tech-card {
+    padding: 30px;
+
+    background: #f8faff;
+
+    border: 1px solid #e2e7f0;
+
+    border-radius: 14px;
+
+    transition: 0.25s ease;
+}
+
+.tech-card:hover {
+    transform: translateY(-6px);
+
+    background: #ffffff;
+
+    border-color: #d6def0;
+
+    box-shadow:
+        0 14px 35px rgba(31, 51, 83, 0.09);
+}
+
+
+/* =========================
+   TECHNOLOGY ICON
+========================= */
+
+.tech-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 22px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+    );
+
+    color: #ffffff;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    box-shadow:
+        0 7px 18px rgba(49, 94, 232, 0.18);
+}
+
+
+/* =========================
+   TECHNOLOGY TEXT
+========================= */
+
+.tech-card h3 {
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+.tech-card p {
+    min-height: 68px;
+
+    margin-bottom: 18px;
+
+    color: #718096;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.tech-card a {
+    color: #315ee8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.tech-card a:hover {
+    color: #172033;
+}
+
+
+/* =========================================================
+   PROJECTS PREVIEW
+========================================================= */
+
+.projects-preview {
+    padding: 95px 7%;
+
+    background: #f5f7fb;
+}
+
+
+/* =========================
+   PROJECT CONTENT
+========================= */
+
+.project-preview-content {
+    max-width: 1100px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 60px;
+
+    padding: 40px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1e6ef;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(31, 51, 83, 0.05);
+}
+
+
+/* =========================
+   PROJECT TEXT
+========================= */
+
+.project-preview-content > div:first-child {
+    max-width: 650px;
+}
+
+.project-preview-content h3 {
+    color: #172033;
+
+    font-size: 28px;
+
+    margin-bottom: 12px;
+}
+
+.project-preview-content p {
+    color: #718096;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   PROJECT LINK
+========================= */
+
+.text-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #315ee8;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.text-link:hover {
+    color: #172033;
+}
+
+
+/* =========================================================
+   PROJECT NUMBERS
+========================================================= */
+
+.project-number {
+    min-width: 230px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px 25px;
+
+    padding: 25px;
+
+    background: #f7f9ff;
+
+    border: 1px solid #e1e7f1;
+
+    border-radius: 12px;
+}
+
+.project-number strong {
+    color: #315ee8;
+
+    font-size: 38px;
+
+    line-height: 1;
+}
+
+.project-number span {
+    align-self: end;
+
+    color: #7b8495;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   CALL TO ACTION
+========================================================= */
+
+.cta {
+    padding: 70px 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
+    background: #172033;
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   CTA CONTENT
+========================= */
+
+.cta > div:first-child > span {
+    color: #7f9cff;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.7px;
+}
+
+.cta h2 {
+    max-width: 650px;
+
+    margin-top: 8px;
+
+    color: #ffffff;
+
+    font-size: clamp(30px, 4vw, 46px);
+
+    line-height: 1.15;
+}
+
+.cta p {
+    margin-top: 12px;
+
+    color: #aeb8c7;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CTA BUTTON
+========================================================= */
+
+.cta .primary-btn {
+    flex-shrink: 0;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+    );
+
+    border: none;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .hero {
+        gap: 40px;
+    }
+
+    .hero-visual {
+        width: 350px;
+        height: 350px;
+    }
+
+    .technology-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .hero-visual {
+        width: 310px;
+        height: 310px;
+    }
+
+    .visual-card {
+        width: 230px;
+        height: 275px;
+    }
+
+    .project-preview-content {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .project-number {
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 760px) {
+
+    .hero {
+        min-height: auto;
+
+        padding: 70px 5%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 50px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-content h1 {
+        font-size: 45px;
+
+        letter-spacing: -1px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+    }
+
+    .hero-visual {
+        width: 100%;
+
+        max-width: 500px;
+
+        height: 330px;
+
+        align-self: center;
+    }
+
+    .technology {
+        padding: 70px 5%;
+    }
+
+    .projects-preview {
+        padding: 70px 5%;
+    }
+
+    .cta {
+        padding: 60px 5%;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .hero-content h1 {
+        font-size: 39px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .technology-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-card p {
+        min-height: auto;
+    }
+
+    .project-preview-content {
+        padding: 28px;
+    }
+
+    .project-preview-content h3 {
+        font-size: 23px;
+    }
+
+    .project-number {
+        min-width: 0;
+
+        width: 100%;
+    }
+
+    .cta h2 {
+        font-size: 32px;
+    }
+
+}
+
+/* =========================================================
+   CODE SYMBOL VISUAL
+========================================================= */
+
+.visual-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.code-symbol {
+    position: absolute;
+
+    color: #315ee8;
+    font-family: "Courier New", monospace;
+    font-weight: 700;
+
+    opacity: 0.65;
+
+    user-select: none;
+
+    animation: symbolFloat 4s ease-in-out infinite;
+}
+
+/* Different sizes and positions */
+
+.symbol-1 {
+    top: 12%;
+    left: 14%;
+    font-size: 32px;
+}
+
+.symbol-2 {
+    top: 25%;
+    right: 16%;
+    font-size: 27px;
+}
+
+.symbol-3 {
+    top: 15%;
+    right: 38%;
+    font-size: 18px;
+}
+
+.symbol-4 {
+    top: 42%;
+    left: 20%;
+    font-size: 38px;
+}
+
+.symbol-5 {
+    top: 48%;
+    right: 14%;
+    font-size: 25px;
+}
+
+.symbol-6 {
+    bottom: 25%;
+    left: 15%;
+    font-size: 24px;
+}
+
+.symbol-7 {
+    bottom: 17%;
+    right: 28%;
+    font-size: 31px;
+}
+
+.symbol-8 {
+    top: 33%;
+    left: 43%;
+    font-size: 20px;
+}
+
+.symbol-9 {
+    bottom: 15%;
+    left: 42%;
+    font-size: 18px;
+}
+
+.symbol-10 {
+    top: 63%;
+    right: 42%;
+    font-size: 17px;
+}
+
+.symbol-11 {
+    top: 73%;
+    left: 28%;
+    font-size: 16px;
+}
+
+.symbol-12 {
+    top: 30%;
+    left: 20%;
+    font-size: 13px;
+}
+
+
+/* Subtle movement */
+
+@keyframes symbolFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Keep the label above the symbols */
+
+.visual-label {
+    position: absolute;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   REAL TECHNOLOGY LOGOS
+========================================================= */
+
+.visual-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-logo {
+    position: absolute;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid #e3e9f5;
+    border-radius: 14px;
+
+    box-shadow: 0 8px 22px rgba(28, 42, 70, 0.08);
+
+    animation: techLogoFloat 4s ease-in-out infinite;
+}
+
+.tech-logo i {
+    font-size: 32px;
+}
+
+
+/* HTML */
+
+.html-logo {
+    top: 12%;
+    left: 13%;
+}
+
+
+/* CSS */
+
+.css-logo {
+    top: 11%;
+    right: 14%;
+    animation-delay: .5s;
+}
+
+
+/* JAVASCRIPT */
+
+.js-logo {
+    top: 38%;
+    left: 39%;
+    animation-delay: 1s;
+}
+
+
+/* PYTHON */
+
+.python-logo {
+    top: 39%;
+    right: 12%;
+    animation-delay: 1.5s;
+}
+
+
+/* REACT */
+
+.react-logo {
+    bottom: 15%;
+    left: 13%;
+    animation-delay: 2s;
+}
+
+
+/* NODE.JS */
+
+.node-logo {
+    bottom: 14%;
+    right: 14%;
+    animation-delay: 2.5s;
+}
+
+
+/* GIT */
+
+.git-logo {
+    top: 63%;
+    left: 40%;
+    animation-delay: 3s;
+}
+
+
+/* MYSQL */
+
+.mysql-logo {
+    top: 20%;
+    left: 44%;
+    animation-delay: 3.5s;
+}
+
+
+/* =========================================================
+   SUBTLE MOVEMENT
+========================================================= */
+
+@keyframes techLogoFloat {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+
+/* Keep the Jascube label above everything */
+
+.visual-label {
+    position: absolute;
+    z-index: 10;
+}

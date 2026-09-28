@@ -1,0 +1,571 @@
+/* =========================================================
+   JASCUBE TECHNOLOGY
+   CLASSES PAGE STYLES
+========================================================= */
+
+
+/* =========================================================
+   CLASS HERO
+========================================================= */
+
+.class-hero {
+    min-height: 570px;
+    padding: 85px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+
+    background:
+        radial-gradient(circle at 85% 20%, rgba(79,70,229,.10), transparent 30%),
+        linear-gradient(135deg, #f8faff, #ffffff);
+}
+
+.class-hero-content {
+    max-width: 620px;
+}
+
+.class-label {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #315ee8;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.class-hero h1 {
+    margin-bottom: 22px;
+
+    color: #172033;
+    font-size: clamp(44px, 6vw, 72px);
+    line-height: 1.02;
+    letter-spacing: -2px;
+}
+
+.class-hero h1 span {
+    display: block;
+
+    background: linear-gradient(135deg, #4f46e5, #2563eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.class-hero p {
+    max-width: 570px;
+    margin-bottom: 30px;
+
+    color: #687386;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.class-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+/* =========================================================
+   HERO CODE CARD
+========================================================= */
+
+.class-hero-card {
+    width: 430px;
+    min-height: 350px;
+    flex-shrink: 0;
+
+    padding: 0;
+
+    background: #172033;
+    border: 1px solid #28344b;
+    border-radius: 16px;
+
+    box-shadow:
+        0 25px 55px rgba(28,42,70,.18),
+        0 8px 20px rgba(49,94,232,.08);
+
+    overflow: hidden;
+}
+
+.hero-card-top {
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 0 18px;
+
+    background: #202b40;
+    border-bottom: 1px solid #303c52;
+}
+
+.hero-card-top span {
+    width: 9px;
+    height: 9px;
+
+    display: block;
+
+    border-radius: 50%;
+    background: #66738a;
+}
+
+.code-preview {
+    padding: 45px 38px 25px;
+
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    line-height: 2.1;
+
+    color: #b8c4d7;
+}
+
+.code-preview p {
+    margin: 0;
+}
+
+.code-preview p span {
+    color: #7c8cff;
+}
+
+.code-preview .indent {
+    padding-left: 25px;
+    color: #d4dbea;
+}
+
+.hero-card-label {
+    padding: 0 38px 28px;
+
+    color: #738099;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.class-overview {
+    padding: 90px 7% 70px;
+    background: #fff;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-heading > span {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.section-heading h2 {
+    margin-bottom: 17px;
+
+    color: #172033;
+
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.section-heading h2 strong {
+    color: #315ee8;
+    font-weight: 800;
+}
+
+.section-heading p {
+    color: #687386;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEARNING SECTION
+========================================================= */
+
+.learn-section {
+    padding: 90px 7% 105px;
+    background: #f8faff;
+}
+
+.learn-section .section-heading {
+    margin-bottom: 55px;
+}
+
+.learning-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.learning-card {
+    position: relative;
+
+    min-height: 225px;
+    padding: 30px;
+
+    background: #fff;
+    border: 1px solid #e5e9f1;
+    border-radius: 12px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.learning-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #d5dcf5;
+
+    box-shadow: 0 15px 35px rgba(28,42,70,.09);
+}
+
+.learning-number {
+    margin-bottom: 25px;
+
+    color: #315ee8;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.learning-card h3 {
+    margin-bottom: 10px;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+.learning-card p {
+    color: #687386;
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   AUDIENCE SECTION
+========================================================= */
+
+.audience-section {
+    padding: 100px 7%;
+
+    background:
+        radial-gradient(circle at 10% 80%, rgba(79,70,229,.07), transparent 28%),
+        #fff;
+}
+
+.audience-content {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 90px;
+    align-items: center;
+}
+
+.audience-content > span {
+    grid-column: 1;
+
+    margin-bottom: 14px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.audience-content h2 {
+    grid-column: 1;
+
+    margin-bottom: 18px;
+
+    color: #172033;
+
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.audience-content h2 strong {
+    display: block;
+    color: #315ee8;
+}
+
+.audience-content > p {
+    grid-column: 1;
+
+    color: #687386;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.audience-list {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+
+    padding: 30px;
+
+    background: #f8faff;
+    border: 1px solid #e5e9f1;
+    border-radius: 14px;
+}
+
+.audience-list div {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 16px 0;
+
+    color: #4e5a6e;
+
+    font-size: 14px;
+
+    border-bottom: 1px solid #e5e9f1;
+}
+
+.audience-list div:last-child {
+    border-bottom: none;
+}
+
+.audience-list div span {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    color: #315ee8;
+    background: #e9edff;
+
+    border-radius: 50%;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CLASS CTA
+========================================================= */
+
+.class-cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg, #f3f5ff, #eef5ff);
+}
+
+.class-cta > div {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.class-cta span {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.class-cta h2 {
+    margin-bottom: 17px;
+
+    color: #172033;
+
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.class-cta h2 strong {
+    color: #315ee8;
+}
+
+.class-cta p {
+    max-width: 570px;
+    margin: 0 auto 28px;
+
+    color: #687386;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .class-hero {
+        padding: 70px 6%;
+        gap: 45px;
+    }
+
+    .class-hero-card {
+        width: 370px;
+    }
+
+    .learning-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .audience-content {
+        column-gap: 50px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .class-hero {
+        min-height: auto;
+
+        padding: 65px 5% 75px;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .class-hero-content {
+        max-width: 100%;
+    }
+
+    .class-hero h1 {
+        font-size: 50px;
+    }
+
+    .class-hero p {
+        font-size: 15px;
+    }
+
+    .class-hero-card {
+        width: 100%;
+        max-width: 500px;
+        align-self: center;
+    }
+
+    .class-overview {
+        padding: 70px 5% 55px;
+    }
+
+    .learn-section {
+        padding: 70px 5% 80px;
+    }
+
+    .learning-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .learning-card {
+        min-height: auto;
+    }
+
+    .audience-section {
+        padding: 75px 5%;
+    }
+
+    .audience-content {
+        display: block;
+    }
+
+    .audience-list {
+        margin-top: 35px;
+    }
+
+    .class-cta {
+        padding: 75px 5%;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .class-hero {
+        padding-top: 50px;
+    }
+
+    .class-hero h1 {
+        font-size: 43px;
+        letter-spacing: -1.5px;
+    }
+
+    .class-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .class-buttons .btn {
+        width: 100%;
+    }
+
+    .class-hero-card {
+        min-height: 310px;
+    }
+
+    .code-preview {
+        padding: 35px 25px 20px;
+        font-size: 13px;
+    }
+
+    .hero-card-label {
+        padding: 0 25px 25px;
+        font-size: 9px;
+    }
+
+    .section-heading h2,
+    .audience-content h2,
+    .class-cta h2 {
+        font-size: 31px;
+    }
+
+    .learning-card {
+        padding: 25px;
+    }
+
+    .audience-list {
+        padding: 20px;
+    }
+
+}

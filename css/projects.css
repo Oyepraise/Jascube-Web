@@ -1,0 +1,543 @@
+/* =========================================================
+   JASCUBE TECHNOLOGY
+   PROJECTS PAGE
+========================================================= */
+
+
+/* =========================================================
+   PROJECT HERO
+========================================================= */
+
+.projects-hero {
+    min-height: 390px;
+    padding: 80px 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 20% 30%, rgba(79,70,229,.08), transparent 30%),
+        radial-gradient(circle at 80% 70%, rgba(37,99,235,.08), transparent 30%),
+        linear-gradient(135deg, #f8faff, #ffffff);
+}
+
+.projects-hero-content {
+    max-width: 780px;
+}
+
+.projects-hero-content > span {
+    display: block;
+    margin-bottom: 15px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.projects-hero h1 {
+    margin-bottom: 18px;
+
+    color: #172033;
+
+    font-size: clamp(40px, 6vw, 64px);
+    line-height: 1.08;
+    letter-spacing: -2px;
+}
+
+.projects-hero h1 strong {
+    color: #315ee8;
+}
+
+.projects-hero p {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #687386;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   IMAGE PROJECTS
+========================================================= */
+
+.project-showcase {
+    padding: 90px 7% 105px;
+    background: #fff;
+}
+
+.project-showcase .section-heading {
+    margin-bottom: 55px;
+}
+
+.section-heading {
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+.section-heading > span {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.section-heading h2 {
+    margin-bottom: 17px;
+
+    color: #172033;
+
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.section-heading h2 strong {
+    color: #315ee8;
+}
+
+.section-heading p {
+    color: #687386;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   PROJECT GRID
+========================================================= */
+
+.project-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid #e5e9f1;
+    border-radius: 13px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #d6ddf2;
+
+    box-shadow: 0 18px 40px rgba(28,42,70,.10);
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-image {
+    position: relative;
+
+    height: 260px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(135deg, #edf1ff, #f5f8ff);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/*
+   This placeholder sits over the image area.
+   Once a real image is added, it will be hidden
+   automatically by the CSS below.
+*/
+
+.image-placeholder {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 30% 30%, rgba(79,70,229,.10), transparent 30%),
+        linear-gradient(135deg, #edf1ff, #f7f9ff);
+
+    pointer-events: none;
+}
+
+.image-placeholder span {
+    margin-bottom: 7px;
+
+    color: #315ee8;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.image-placeholder p {
+    margin: 0;
+
+    color: #7b8495;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PROJECT INFORMATION
+========================================================= */
+
+.project-info {
+    padding: 25px 27px 29px;
+}
+
+.project-number {
+    display: block;
+    margin-bottom: 9px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.project-info h3 {
+    margin-bottom: 9px;
+
+    color: #172033;
+
+    font-size: 19px;
+}
+
+.project-info p {
+    color: #687386;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   VIDEO PROJECTS
+========================================================= */
+
+.video-projects {
+    padding: 90px 7% 105px;
+
+    background: #f8faff;
+}
+
+.video-projects .section-heading {
+    margin-bottom: 55px;
+}
+
+.video-grid {
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.video-card {
+    overflow: hidden;
+
+    background: #fff;
+
+    border: 1px solid #e5e9f1;
+    border-radius: 13px;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 18px 40px rgba(28,42,70,.09);
+}
+
+
+/* =========================================================
+   VIDEO AREA
+========================================================= */
+
+.video-container {
+    position: relative;
+
+    height: 290px;
+
+    overflow: hidden;
+
+    background: #172033;
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/*
+   Video placeholder
+*/
+
+.video-placeholder {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle at 50% 30%, rgba(79,70,229,.16), transparent 35%),
+        #172033;
+
+    pointer-events: none;
+}
+
+.video-placeholder span {
+    margin-bottom: 8px;
+
+    color: #aeb9cc;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.video-placeholder p {
+    margin: 0;
+
+    color: #78859b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   VIDEO INFORMATION
+========================================================= */
+
+.video-info {
+    padding: 24px 27px 28px;
+}
+
+.video-info > span {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.video-info h3 {
+    margin-bottom: 9px;
+
+    color: #172033;
+
+    font-size: 18px;
+}
+
+.video-info p {
+    color: #687386;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PROJECT CTA
+========================================================= */
+
+.projects-cta {
+    padding: 90px 7%;
+
+    text-align: center;
+
+    background:
+        linear-gradient(135deg, #f3f5ff, #eef5ff);
+}
+
+.projects-cta > div {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects-cta > div > span {
+    display: block;
+    margin-bottom: 13px;
+
+    color: #315ee8;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.projects-cta h2 {
+    margin-bottom: 17px;
+
+    color: #172033;
+
+    font-size: clamp(30px, 4vw, 43px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.projects-cta h2 strong {
+    color: #315ee8;
+}
+
+.projects-cta p {
+    max-width: 570px;
+    margin: 0 auto 28px;
+
+    color: #687386;
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-container {
+        height: 330px;
+    }
+}
+
+
+@media (max-width: 760px) {
+
+    .projects-hero {
+        min-height: 350px;
+        padding: 65px 5%;
+    }
+
+    .project-showcase {
+        padding: 70px 5% 80px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image {
+        height: 280px;
+    }
+
+    .video-projects {
+        padding: 70px 5% 80px;
+    }
+
+    .video-container {
+        height: 300px;
+    }
+
+    .projects-cta {
+        padding: 75px 5%;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    .projects-hero {
+        min-height: 320px;
+    }
+
+    .projects-hero h1 {
+        font-size: 39px;
+        letter-spacing: -1.5px;
+    }
+
+    .projects-hero p {
+        font-size: 14px;
+    }
+
+    .section-heading h2,
+    .projects-cta h2 {
+        font-size: 31px;
+    }
+
+    .project-image {
+        height: 230px;
+    }
+
+    .video-container {
+        height: 230px;
+    }
+
+    .project-info,
+    .video-info {
+        padding: 22px;
+    }
+
+}
